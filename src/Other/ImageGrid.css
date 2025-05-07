@@ -1,0 +1,20 @@
+.image-grid {
+    padding-top: 80px; /* Enough space below the fixed navbar */
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-gap: 16px;
+    padding: 20px;
+  }
+  .image-grid img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease;
+  }
+  
+  .image-grid img:hover {
+    transform: scale(1.05);
+  }
+  
